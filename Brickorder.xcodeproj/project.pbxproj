@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B38AD2D42A80F76400089406 /* BrickorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38AD2D32A80F76400089406 /* BrickorderApp.swift */; };
-		B38AD2D62A80F76400089406 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38AD2D52A80F76400089406 /* ContentView.swift */; };
+		B38AD2D62A80F76400089406 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38AD2D52A80F76400089406 /* LoginView.swift */; };
 		B38AD2D82A80F76500089406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B38AD2D72A80F76500089406 /* Assets.xcassets */; };
 		B38AD2DB2A80F76500089406 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B38AD2DA2A80F76500089406 /* Preview Assets.xcassets */; };
 		B38AD2E52A80F76500089406 /* BrickorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38AD2E42A80F76500089406 /* BrickorderTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		B38AD2D02A80F76400089406 /* Brickorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brickorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38AD2D32A80F76400089406 /* BrickorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickorderApp.swift; sourceTree = "<group>"; };
-		B38AD2D52A80F76400089406 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B38AD2D52A80F76400089406 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B38AD2D72A80F76500089406 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B38AD2DA2A80F76500089406 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B38AD2E02A80F76500089406 /* BrickorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrickorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,8 +94,8 @@
 		B38AD2D22A80F76400089406 /* Brickorder */ = {
 			isa = PBXGroup;
 			children = (
+				B38AD2FD2A80F8D800089406 /* Views */,
 				B38AD2D32A80F76400089406 /* BrickorderApp.swift */,
-				B38AD2D52A80F76400089406 /* ContentView.swift */,
 				B38AD2D72A80F76500089406 /* Assets.xcassets */,
 				B38AD2D92A80F76500089406 /* Preview Content */,
 			);
@@ -125,6 +125,14 @@
 				B38AD2F02A80F76500089406 /* BrickorderUITestsLaunchTests.swift */,
 			);
 			path = BrickorderUITests;
+			sourceTree = "<group>";
+		};
+		B38AD2FD2A80F8D800089406 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B38AD2D52A80F76400089406 /* LoginView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B38AD2D62A80F76400089406 /* ContentView.swift in Sources */,
+				B38AD2D62A80F76400089406 /* LoginView.swift in Sources */,
 				B38AD2D42A80F76400089406 /* BrickorderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
