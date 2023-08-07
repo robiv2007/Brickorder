@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B38AD2D42A80F76400089406 /* BrickorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38AD2D32A80F76400089406 /* BrickorderApp.swift */; };
+		B38AD2D62A80F76400089406 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38AD2D52A80F76400089406 /* ContentView.swift */; };
+		B38AD2D82A80F76500089406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B38AD2D72A80F76500089406 /* Assets.xcassets */; };
+		B38AD2DB2A80F76500089406 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B38AD2DA2A80F76500089406 /* Preview Assets.xcassets */; };
+		B38AD2E52A80F76500089406 /* BrickorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38AD2E42A80F76500089406 /* BrickorderTests.swift */; };
+		B38AD2EF2A80F76500089406 /* BrickorderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38AD2EE2A80F76500089406 /* BrickorderUITests.swift */; };
+		B38AD2F12A80F76500089406 /* BrickorderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38AD2F02A80F76500089406 /* BrickorderUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B38AD2E12A80F76500089406 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B38AD2C82A80F76400089406 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B38AD2CF2A80F76400089406;
+			remoteInfo = Brickorder;
+		};
+		B38AD2EB2A80F76500089406 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B38AD2C82A80F76400089406 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B38AD2CF2A80F76400089406;
+			remoteInfo = Brickorder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B38AD2D02A80F76400089406 /* Brickorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brickorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B38AD2D32A80F76400089406 /* BrickorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickorderApp.swift; sourceTree = "<group>"; };
+		B38AD2D52A80F76400089406 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B38AD2D72A80F76500089406 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B38AD2DA2A80F76500089406 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B38AD2E02A80F76500089406 /* BrickorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrickorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B38AD2E42A80F76500089406 /* BrickorderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickorderTests.swift; sourceTree = "<group>"; };
+		B38AD2EA2A80F76500089406 /* BrickorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrickorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B38AD2EE2A80F76500089406 /* BrickorderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickorderUITests.swift; sourceTree = "<group>"; };
+		B38AD2F02A80F76500089406 /* BrickorderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickorderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B38AD2CD2A80F76400089406 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38AD2DD2A80F76500089406 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38AD2E72A80F76500089406 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B38AD2C72A80F76400089406 = {
+			isa = PBXGroup;
+			children = (
+				B38AD2D22A80F76400089406 /* Brickorder */,
+				B38AD2E32A80F76500089406 /* BrickorderTests */,
+				B38AD2ED2A80F76500089406 /* BrickorderUITests */,
+				B38AD2D12A80F76400089406 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B38AD2D12A80F76400089406 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B38AD2D02A80F76400089406 /* Brickorder.app */,
+				B38AD2E02A80F76500089406 /* BrickorderTests.xctest */,
+				B38AD2EA2A80F76500089406 /* BrickorderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B38AD2D22A80F76400089406 /* Brickorder */ = {
+			isa = PBXGroup;
+			children = (
+				B38AD2D32A80F76400089406 /* BrickorderApp.swift */,
+				B38AD2D52A80F76400089406 /* ContentView.swift */,
+				B38AD2D72A80F76500089406 /* Assets.xcassets */,
+				B38AD2D92A80F76500089406 /* Preview Content */,
+			);
+			path = Brickorder;
+			sourceTree = "<group>";
+		};
+		B38AD2D92A80F76500089406 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B38AD2DA2A80F76500089406 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B38AD2E32A80F76500089406 /* BrickorderTests */ = {
+			isa = PBXGroup;
+			children = (
+				B38AD2E42A80F76500089406 /* BrickorderTests.swift */,
+			);
+			path = BrickorderTests;
+			sourceTree = "<group>";
+		};
+		B38AD2ED2A80F76500089406 /* BrickorderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B38AD2EE2A80F76500089406 /* BrickorderUITests.swift */,
+				B38AD2F02A80F76500089406 /* BrickorderUITestsLaunchTests.swift */,
+			);
+			path = BrickorderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B38AD2CF2A80F76400089406 /* Brickorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B38AD2F42A80F76500089406 /* Build configuration list for PBXNativeTarget "Brickorder" */;
+			buildPhases = (
+				B38AD2CC2A80F76400089406 /* Sources */,
+				B38AD2CD2A80F76400089406 /* Frameworks */,
+				B38AD2CE2A80F76400089406 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Brickorder;
+			productName = Brickorder;
+			productReference = B38AD2D02A80F76400089406 /* Brickorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B38AD2DF2A80F76500089406 /* BrickorderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B38AD2F72A80F76500089406 /* Build configuration list for PBXNativeTarget "BrickorderTests" */;
+			buildPhases = (
+				B38AD2DC2A80F76500089406 /* Sources */,
+				B38AD2DD2A80F76500089406 /* Frameworks */,
+				B38AD2DE2A80F76500089406 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B38AD2E22A80F76500089406 /* PBXTargetDependency */,
+			);
+			name = BrickorderTests;
+			productName = BrickorderTests;
+			productReference = B38AD2E02A80F76500089406 /* BrickorderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B38AD2E92A80F76500089406 /* BrickorderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B38AD2FA2A80F76500089406 /* Build configuration list for PBXNativeTarget "BrickorderUITests" */;
+			buildPhases = (
+				B38AD2E62A80F76500089406 /* Sources */,
+				B38AD2E72A80F76500089406 /* Frameworks */,
+				B38AD2E82A80F76500089406 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B38AD2EC2A80F76500089406 /* PBXTargetDependency */,
+			);
+			name = BrickorderUITests;
+			productName = BrickorderUITests;
+			productReference = B38AD2EA2A80F76500089406 /* BrickorderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B38AD2C82A80F76400089406 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B38AD2CF2A80F76400089406 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					B38AD2DF2A80F76500089406 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B38AD2CF2A80F76400089406;
+					};
+					B38AD2E92A80F76500089406 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B38AD2CF2A80F76400089406;
+					};
+				};
+			};
+			buildConfigurationList = B38AD2CB2A80F76400089406 /* Build configuration list for PBXProject "Brickorder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B38AD2C72A80F76400089406;
+			productRefGroup = B38AD2D12A80F76400089406 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B38AD2CF2A80F76400089406 /* Brickorder */,
+				B38AD2DF2A80F76500089406 /* BrickorderTests */,
+				B38AD2E92A80F76500089406 /* BrickorderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B38AD2CE2A80F76400089406 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38AD2DB2A80F76500089406 /* Preview Assets.xcassets in Resources */,
+				B38AD2D82A80F76500089406 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38AD2DE2A80F76500089406 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38AD2E82A80F76500089406 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B38AD2CC2A80F76400089406 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38AD2D62A80F76400089406 /* ContentView.swift in Sources */,
+				B38AD2D42A80F76400089406 /* BrickorderApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38AD2DC2A80F76500089406 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38AD2E52A80F76500089406 /* BrickorderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38AD2E62A80F76500089406 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38AD2EF2A80F76500089406 /* BrickorderUITests.swift in Sources */,
+				B38AD2F12A80F76500089406 /* BrickorderUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B38AD2E22A80F76500089406 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B38AD2CF2A80F76400089406 /* Brickorder */;
+			targetProxy = B38AD2E12A80F76500089406 /* PBXContainerItemProxy */;
+		};
+		B38AD2EC2A80F76500089406 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B38AD2CF2A80F76400089406 /* Brickorder */;
+			targetProxy = B38AD2EB2A80F76500089406 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B38AD2F22A80F76500089406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B38AD2F32A80F76500089406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B38AD2F52A80F76500089406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Brickorder/Preview Content\"";
+				DEVELOPMENT_TEAM = JYXM9GFJ7A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robiv2007.Brickorder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B38AD2F62A80F76500089406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Brickorder/Preview Content\"";
+				DEVELOPMENT_TEAM = JYXM9GFJ7A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robiv2007.Brickorder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B38AD2F82A80F76500089406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JYXM9GFJ7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robiv2007.BrickorderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brickorder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Brickorder";
+			};
+			name = Debug;
+		};
+		B38AD2F92A80F76500089406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JYXM9GFJ7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robiv2007.BrickorderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brickorder.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Brickorder";
+			};
+			name = Release;
+		};
+		B38AD2FB2A80F76500089406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JYXM9GFJ7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robiv2007.BrickorderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Brickorder;
+			};
+			name = Debug;
+		};
+		B38AD2FC2A80F76500089406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JYXM9GFJ7A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robiv2007.BrickorderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Brickorder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B38AD2CB2A80F76400089406 /* Build configuration list for PBXProject "Brickorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B38AD2F22A80F76500089406 /* Debug */,
+				B38AD2F32A80F76500089406 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B38AD2F42A80F76500089406 /* Build configuration list for PBXNativeTarget "Brickorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B38AD2F52A80F76500089406 /* Debug */,
+				B38AD2F62A80F76500089406 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B38AD2F72A80F76500089406 /* Build configuration list for PBXNativeTarget "BrickorderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B38AD2F82A80F76500089406 /* Debug */,
+				B38AD2F92A80F76500089406 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B38AD2FA2A80F76500089406 /* Build configuration list for PBXNativeTarget "BrickorderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B38AD2FB2A80F76500089406 /* Debug */,
+				B38AD2FC2A80F76500089406 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B38AD2C82A80F76400089406 /* Project object */;
+}
