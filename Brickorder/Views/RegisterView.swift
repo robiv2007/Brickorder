@@ -1,5 +1,5 @@
 //
-//  LoginView.swift
+//  RegisterView.swift
 //  Brickorder
 //
 //  Created by vatran robert on 2023-08-07.
@@ -8,7 +8,7 @@
 import SwiftUI
 import FirebaseAuth
 
-struct LoginView: View {
+struct RegisterView: View {
     @State var email: String = ""
     @State var password: String = ""
     var body: some View {
@@ -17,19 +17,26 @@ struct LoginView: View {
                 .autocorrectionDisabled()
             SecureField("password", text: $password)
             Button {
-               //Login
+                register()
             }
         label: {
-            Text("Login")
+            Text("Register")
         }
 
+        }
     }
-        .padding()
+
+    func register() {
+        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+            if error != nil {
+                print(error?.localizedDescription as Any)
+            }
+        }
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
+struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        RegisterView()
     }
 }

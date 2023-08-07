@@ -14,6 +14,10 @@
 		B38AD2E52A80F76500089406 /* BrickorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38AD2E42A80F76500089406 /* BrickorderTests.swift */; };
 		B38AD2EF2A80F76500089406 /* BrickorderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38AD2EE2A80F76500089406 /* BrickorderUITests.swift */; };
 		B38AD2F12A80F76500089406 /* BrickorderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38AD2F02A80F76500089406 /* BrickorderUITestsLaunchTests.swift */; };
+		B38AD3002A80FD5C00089406 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B38AD2FF2A80FD5C00089406 /* FirebaseAuth */; };
+		B38AD3022A80FD5C00089406 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B38AD3012A80FD5C00089406 /* FirebaseFirestore */; };
+		B38AD3042A80FE9E00089406 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B38AD3032A80FE9E00089406 /* GoogleService-Info.plist */; };
+		B38AD3062A81065C00089406 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38AD3052A81065C00089406 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,8 @@
 		B38AD2EA2A80F76500089406 /* BrickorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrickorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38AD2EE2A80F76500089406 /* BrickorderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickorderUITests.swift; sourceTree = "<group>"; };
 		B38AD2F02A80F76500089406 /* BrickorderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickorderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B38AD3032A80FE9E00089406 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B38AD3052A81065C00089406 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38AD3002A80FD5C00089406 /* FirebaseAuth in Frameworks */,
+				B38AD3022A80FD5C00089406 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +102,7 @@
 		B38AD2D22A80F76400089406 /* Brickorder */ = {
 			isa = PBXGroup;
 			children = (
+				B38AD3032A80FE9E00089406 /* GoogleService-Info.plist */,
 				B38AD2FD2A80F8D800089406 /* Views */,
 				B38AD2D32A80F76400089406 /* BrickorderApp.swift */,
 				B38AD2D72A80F76500089406 /* Assets.xcassets */,
@@ -131,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				B38AD2D52A80F76400089406 /* LoginView.swift */,
+				B38AD3052A81065C00089406 /* RegisterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,6 +161,10 @@
 			dependencies = (
 			);
 			name = Brickorder;
+			packageProductDependencies = (
+				B38AD2FF2A80FD5C00089406 /* FirebaseAuth */,
+				B38AD3012A80FD5C00089406 /* FirebaseFirestore */,
+			);
 			productName = Brickorder;
 			productReference = B38AD2D02A80F76400089406 /* Brickorder.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +237,9 @@
 				Base,
 			);
 			mainGroup = B38AD2C72A80F76400089406;
+			packageReferences = (
+				B38AD2FE2A80FD5C00089406 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B38AD2D12A80F76400089406 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -241,6 +258,7 @@
 			files = (
 				B38AD2DB2A80F76500089406 /* Preview Assets.xcassets in Resources */,
 				B38AD2D82A80F76500089406 /* Assets.xcassets in Resources */,
+				B38AD3042A80FE9E00089406 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38AD3062A81065C00089406 /* RegisterView.swift in Sources */,
 				B38AD2D62A80F76400089406 /* LoginView.swift in Sources */,
 				B38AD2D42A80F76400089406 /* BrickorderApp.swift in Sources */,
 			);
@@ -591,6 +610,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B38AD2FE2A80FD5C00089406 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B38AD2FF2A80FD5C00089406 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B38AD2FE2A80FD5C00089406 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B38AD3012A80FD5C00089406 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B38AD2FE2A80FD5C00089406 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B38AD2C82A80F76400089406 /* Project object */;
 }
