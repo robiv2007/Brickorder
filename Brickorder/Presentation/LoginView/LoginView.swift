@@ -9,13 +9,14 @@ import SwiftUI
 import FirebaseAuth
 
 struct LoginView: View {
-    @State var email: String = ""
-    @State var password: String = ""
+
+    @StateObject var vm = LoginViewModel()
+   
     var body: some View {
         VStack {
-            TextField("email", text: $email)
+            TextField("email", text: $vm.email)
                 .autocorrectionDisabled()
-            SecureField("password", text: $password)
+            SecureField("password", text: $vm.password)
             Button {
                //Login
             }

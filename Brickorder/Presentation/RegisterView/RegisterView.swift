@@ -6,31 +6,23 @@
 //
 
 import SwiftUI
-import FirebaseAuth
 
 struct RegisterView: View {
-    @State var email: String = ""
-    @State var password: String = ""
+
+    @StateObject var vm = RegisterViewModel()
+  
     var body: some View {
         VStack {
-            TextField("email", text: $email)
+            TextField("email", text: $vm.email)
                 .autocorrectionDisabled()
-            SecureField("password", text: $password)
+            SecureField("password", text: $vm.password)
             Button {
-                register()
+                vm.register()
             }
         label: {
             Text("Register")
         }
 
-        }
-    }
-
-    func register() {
-        Auth.auth().createUser(withEmail: email, password: password) { result, error in
-            if error != nil {
-                print(error?.localizedDescription as Any)
-            }
         }
     }
 }
