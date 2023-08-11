@@ -8,7 +8,7 @@
 import Foundation
 
 struct Order: Identifiable, Decodable {
-    let id: UUID
+    let id: String
     let name: String
     let adress: String
     let description: String

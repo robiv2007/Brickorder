@@ -11,12 +11,15 @@ import Firebase
 @main
 struct BrickorderApp: App {
 
+    @StateObject var dataManager = DataManager()
+
     init() {
         FirebaseApp.configure()
     }
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            ListView()
+                .environmentObject(dataManager)
         }
     }
 }

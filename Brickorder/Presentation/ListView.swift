@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct ListView: View {
+
+    @EnvironmentObject var dataManager: DataManager
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(dataManager.orders, id: \.id ) { order in
+                Text(order.name)
+
+            }
+        }
     }
 }
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         ListView()
+            .environmentObject(DataManager())
     }
 }
