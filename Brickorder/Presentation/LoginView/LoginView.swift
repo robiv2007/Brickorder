@@ -13,18 +13,28 @@ struct LoginView: View {
     @StateObject var vm = LoginViewModel()
    
     var body: some View {
+        if vm.isUserLoggedIn {
+            ListView()
+        } else {
+            mainView
+        }
+    }
+
+
+    var mainView: some View {
         VStack {
             TextField("email", text: $vm.email)
                 .autocorrectionDisabled()
             SecureField("password", text: $vm.password)
             Button {
-               //Login
+                vm.login()
             }
         label: {
             Text("Login")
         }
 
     }
+        .onAppear(perform: vm.checkUser)
         .padding()
     }
 }

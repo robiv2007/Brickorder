@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B385AC962A842F5000520583 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B385AC952A842F5000520583 /* ListView.swift */; };
+		B385AC992A86277300520583 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = B385AC982A86277300520583 /* Order.swift */; };
 		B38AD2D42A80F76400089406 /* BrickorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38AD2D32A80F76400089406 /* BrickorderApp.swift */; };
 		B38AD2D62A80F76400089406 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38AD2D52A80F76400089406 /* LoginView.swift */; };
 		B38AD2D82A80F76500089406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B38AD2D72A80F76500089406 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B385AC952A842F5000520583 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		B385AC982A86277300520583 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		B38AD2D02A80F76400089406 /* Brickorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brickorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38AD2D32A80F76400089406 /* BrickorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickorderApp.swift; sourceTree = "<group>"; };
 		B38AD2D52A80F76400089406 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -83,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B385AC972A86275300520583 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B385AC982A86277300520583 /* Order.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B38AD2C72A80F76400089406 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +118,7 @@
 		B38AD2D22A80F76400089406 /* Brickorder */ = {
 			isa = PBXGroup;
 			children = (
+				B385AC972A86275300520583 /* Model */,
 				B38AD3032A80FE9E00089406 /* GoogleService-Info.plist */,
 				B38AD2FD2A80F8D800089406 /* Presentation */,
 				B38AD2D32A80F76400089406 /* BrickorderApp.swift */,
@@ -145,6 +158,7 @@
 			children = (
 				B38AD3082A84274800089406 /* RegisterView */,
 				B38AD3072A8426FB00089406 /* LoginView */,
+				B385AC952A842F5000520583 /* ListView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -307,9 +321,11 @@
 			files = (
 				B38AD30A2A84277C00089406 /* LoginViewModel.swift in Sources */,
 				B38AD30C2A8427BC00089406 /* RegisterViewModel.swift in Sources */,
+				B385AC962A842F5000520583 /* ListView.swift in Sources */,
 				B38AD3062A81065C00089406 /* RegisterView.swift in Sources */,
 				B38AD2D62A80F76400089406 /* LoginView.swift in Sources */,
 				B38AD2D42A80F76400089406 /* BrickorderApp.swift in Sources */,
+				B385AC992A86277300520583 /* Order.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
