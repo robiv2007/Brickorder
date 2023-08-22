@@ -8,21 +8,21 @@
 import SwiftUI
 
 struct RegisterView: View {
-
+    
     @StateObject var vm = RegisterViewModel()
-  
+    @EnvironmentObject var dataManager: DataManager
     var body: some View {
         VStack {
             TextField("email", text: $vm.email)
                 .autocorrectionDisabled()
             SecureField("password", text: $vm.password)
             Button {
-                vm.register()
+                dataManager.register(email: vm.email, password: vm.password)
             }
         label: {
             Text("Register")
         }
-
+            
         }
     }
 }

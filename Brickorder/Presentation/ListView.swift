@@ -10,11 +10,24 @@ import SwiftUI
 struct ListView: View {
 
     @EnvironmentObject var dataManager: DataManager
+    @State private var showSheet: Bool = false
     var body: some View {
         NavigationView {
-            List(dataManager.orders, id: \.id ) { order in
-                Text(order.name)
+            VStack {
+                List(dataManager.orders, id: \.id) { order in
+                    Text(order.name)
 
+                }
+                .onAppear(perform: dataManager.fetchOrders)
+
+                Button {
+                    showSheet.toggle()
+                } label: {
+                    Text("New order")
+                }
+            }
+            .sheet(isPresented: $showSheet) {
+                NewOrderView()
             }
         }
     }
