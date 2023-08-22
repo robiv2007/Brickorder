@@ -11,13 +11,12 @@ import Firebase
 
 class DataManager: ObservableObject {
 
+    static let shared = DataManager()
+
     @Published var orders: [Order] = []
 
-    init() {
-        fetchOrders()
-    }
-
     func fetchOrders() {
+
         orders.removeAll()
         let db = Firestore.firestore()
         let ref = db.collection("Orders")
@@ -30,12 +29,12 @@ class DataManager: ObservableObject {
             if let snapshot = snapshot {
                 for document in snapshot.documents {
                     let data = document.data()
-                    let id = data["id"] as? String ?? ""
+                    let id = data["id"] as? UUID
                     let name = data["name"] as? String ?? ""
                     let adress = data["adress"] as? String ?? ""
                     let description = data["description"] as? String ?? ""
 
-                    let order = Order(id: id, name: name, adress: adress, description: description)
+                    let order = Order(id: id ?? UUID(), name: name, adress: adress, description: description)
                     self.orders.append(order)
                 }
             }
@@ -43,4 +42,40 @@ class DataManager: ObservableObject {
         }
     }
 
+    func addOrder(name: String, description: String, address: String) {
+        let db = Firestore.firestore()
+        let ordersCollection = db.collection("Orders")
+
+        var ref: DocumentReference? = nil
+        ref = ordersCollection.addDocument(data: [
+            "name": name,
+            "description": description,
+            "address": address
+        ]) { error in
+            if let error = error {
+                print("Error adding order: \(error.localizedDescription)")
+            } else {
+                if let documentID = ref?.documentID {
+                    print("Order added with ID: \(documentID)")
+                }
+            }
+        }
+    }
+
+
+    func login(email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+            if error != nil {
+                print(error?.localizedDescription as Any)
+            }
+        }
+    }
+
+    func register(email: String, password: String) {
+        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+            if error != nil {
+                print(error?.localizedDescription as Any)
+            }
+        }
+    }
 }
