@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Firebase
+import FirebaseCore
 
 @main
 struct BrickorderApp: App {
@@ -17,6 +17,7 @@ struct BrickorderApp: App {
     var body: some Scene {
         WindowGroup {
             LoginView()
+                .environmentObject(DataManager.shared)
         }
     }
 }
